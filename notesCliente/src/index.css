@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #121212e1 100%, #121212 100%), url('https://images.pexels.com/photos/6177680/pexels-photo-6177680.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+li {
+    list-style: none;
+    font-size: 18px;
+}
+
+h2 {
+    color: #fff;
+}
+
+/* -> Navbar <- */
+
+nav {
+    background-color: #262424;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 12vh;
+}
+
+nav ul li {
+    color: #fff;
+}
+
+/* -> forms */
+
+main {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.form-index {
+    background: #121212b4;
+    border-radius: 10px;
+    height: 350px;
+    width: 500px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.form-index h2 {
+    color: #fff;
+    font-size: 30px;
+}
+
+.form-index form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.form-index form input {
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    width: 300px;
+}
+
+.form-index form input:focus {
+    outline: none;
+}
+
+.form-index form button {
+    padding: 12px 36px;
+    border: none;
+    border-radius: 10px;
+}
+
+.form-index .redirect {
+    border-bottom: 1px solid #ffffff;
+}
+
+
+.form-index-2 {
+    background: #121212b4;
+    border-radius: 10px;
+    height: 350px;
+    width: 500px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.form-index-2 h2 {
+    color: #fff;
+    font-size: 30px;
+}
+
+.form-index-2 form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.form-index-2 form input {
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    width: 300px;
+}
+
+.form-index-2 form input:focus {
+    outline: none;
+}
+
+.form-index-2 form button {
+    padding: 12px 36px;
+    border: none;
+    border-radius: 10px;
+}
+
+.form-index-2 .redirect {
+    border-bottom: 1px solid #ffffff;
+}
+
+/*  */
+
+@import url(https://fonts.googleapis.com/css?family=Varela+Round);
+
+$color-one: #1F2124;
+$color-two: #383A3F;
+$color-three: #F68657;
+$color-four: #F6B352;
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+body {
+    background: $color-two;
+    font-family: "Varela Round", sans-serif;
+}
+
+.card {
+    background: #1F2124;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+    margin: 50px 20px 20px 20px;
+    width: calc(33.3333% - 40px);
+    /* 1/3 minus the margins (20+20) */
+    padding: 30px;
+    text-align: center;
+    color: white;
+    float: left;
+
+    @media (max-width: 768px) {
+        margin: 10px 20px;
+        width: calc(100% - 40px);
+
+        &:first-child {
+            margin-top: 20px;
+        }
+    }
+
+    &:nth-child(2) {
+        margin: 20px 0px;
+        width: 33.3333%;
+        padding: 50px 20px;
+
+        @media (max-width: 768px) {
+            margin: 10px 20px;
+            width: calc(100% - 40px);
+        }
+    }
+
+    .title {
+        font-size: 25px;
+    }
+
+    .features {
+        ul {
+            margin: 20px 0 50px 0;
+            list-style-type: none;
+
+            li {
+                margin: 10px 0;
+                font-size: 14px;
+
+                span {
+                    border-bottom: 2px dotted $color-four;
+                }
+            }
+        }
+    }
+
+    .btn {
+        display: block;
+        background: blue;
+        color: white;
+        padding: 15px 20px;
+        margin: 20px 0;
+        border-radius: 5px;
+        box-shadow: rgba(0, 0, 0, 0.9);
+        transition: all 200ms ease-in-out;
+        text-decoration: none;
+    }
+}
